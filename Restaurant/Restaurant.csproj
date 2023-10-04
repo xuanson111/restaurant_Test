@@ -267,10 +267,36 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="compnent\monAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="compnent\monAn.Designer.cs">
+      <DependentUpon>monAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compnent\order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="compnent\order.Designer.cs">
+      <DependentUpon>order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compnent\orderItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="compnent\orderItem.Designer.cs">
+      <DependentUpon>orderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compnent\table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="compnent\table.Designer.cs">
+      <DependentUpon>table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\control.cs" />
     <Compile Include="Controls\ctrHoaDon.cs" />
     <Compile Include="Controls\ctrMonAn.cs" />
     <Compile Include="Controls\ctrPhongBan.cs" />
-    <Compile Include="Modals\PhongBan.cs" />
+    <Compile Include="Models\chiTietMonAn.cs" />
+    <Compile Include="Models\PhongBan.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,6 +419,15 @@
     <Compile Include="Views\frmTaoHoaDon.Designer.cs">
       <DependentUpon>frmTaoHoaDon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="compnent\monAn.resx">
+      <DependentUpon>monAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compnent\order.resx">
+      <DependentUpon>order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compnent\table.resx">
+      <DependentUpon>table.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -464,6 +499,9 @@
     <EmbeddedResource Include="Views\frmTaoHoaDon.resx">
       <DependentUpon>frmTaoHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
